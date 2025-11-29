@@ -132,3 +132,9 @@ if not DEBUG:
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# 🔐 Authentication Redirects
+LOGIN_URL = '/signin/'
+LOGIN_REDIRECT_URL = '/juegos/'
+LOGOUT_REDIRECT_URL = '/signin/'
